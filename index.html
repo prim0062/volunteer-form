@@ -23,104 +23,98 @@
 
       <fieldset class="grid xs-1 s-1 m-1 l-1 push-1-2 pad-b-1-8">
         <legend class="unit giga push pad-b-1-2">Personal details</legend>
+        <!-- Name -->
+        <div class="pad-r unit xs-1 s-1 m-1-2 l-1-2 push">
+          <label for="name" class="push-1-8">Full name</label>
+          <input id="name" name="details" class="push-1-8" required>
+          <p class="micro italic push-0">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
+        </div>
 
-        <div class="unit grid">
-          <!-- Name -->
-          <div class="pad-r unit xs-1 s-1 m-1-2 l-1-2 push">
-            <label for="name" class="push-1-8">Full name</label>
-            <input id="name" name="details" class="push-1-8" required>
-            <p class="micro italic push-0">Your full legal name, for insurance purposes, e.g. “Elizabeth Bradley”.</p>
-          </div>
+        <!-- Call You -->
+        <div class="pad-l unit xs-1 s-1 m-1-2 l-1-2 push">
+          <label for="called" class="push-1-8">What should we call you?</label>
+          <input id="called" name="details" class="push-1-8" required>
+          <p class="micro italic push-0">What all your friends call you, e.g. “Liz”.</p>
+        </div>
 
-          <!-- Call You -->
-          <div class="pad-l unit xs-1 s-1 m-1-2 l-1-2 push">
-            <label for="called" class="push-1-8">What should we call you?</label>
-            <input id="called" name="details" class="push-1-8" required>
-            <p class="micro italic push-0">What all your friends call you, e.g. “Liz”.</p>
-          </div>
+        <!-- DoB -->
+        <div class="pad-r unit xs-1 s-1 m-1-2 l-1-2 push">
+          <label for="dob" class="push-1-8">Date of birth</label>
+          <input id="dob" type="date" name="details" required>
+        </div>
 
-          <!-- DoB -->
-          <div class="pad-r unit xs-1 s-1 m-1-2 l-1-2 push">
-            <label for="dob" class="push-1-8">Date of birth</label>
-            <input id="dob" type="date" name="details" required>
-          </div>
+        <!-- T-shirt -->
+        <div class="pad-l unit xs-1 s-1 m-1-2 l-1-2 push">
+          <label for="tshirt" class="push-1-8">T-shirt size</label>
+          <select id="tshirt" name="details">
+            <option value="">Select a t-shirt size</option>
+            <option>Fitted: XS</option>
+            <option>Fitted: S</option>
+            <option>Fitted: M</option>
+            <option>Fitted: L</option>
+            <option>Fitted: XL</option>
+            <option>Straight-cut: XS</option>
+            <option>Straight-cut: S</option>
+            <option>Straight-cut: M</option>
+            <option>Straight-cut: L</option>
+            <option>Straight-cut: XL</option>
+          </select>
+        </div>
 
-          <!-- T-shirt -->
-          <div class="pad-l unit xs-1 s-1 m-1-2 l-1-2 push">
-            <label for="tshirt" class="push-1-8">T-shirt size</label>
-            <select id="tshirt" name="details">
-              <option value="">Select a t-shirt size</option>
-              <option>Fitted: XS</option>
-              <option>Fitted: S</option>
-              <option>Fitted: M</option>
-              <option>Fitted: L</option>
-              <option>Fitted: XL</option>
-              <option>Straight-cut: XS</option>
-              <option>Straight-cut: S</option>
-              <option>Straight-cut: M</option>
-              <option>Straight-cut: L</option>
-              <option>Straight-cut: XL</option>
-            </select>
-          </div>
+        <!-- Email -->
+        <div class="pad-r unit xs-1 s-1 m-1-2 l-1-2 push">
+          <label for="email" class="push-1-8">Email</label>
+          <input id="email" type="email" name="details" required>
+        </div>
 
-          <!-- Email -->
-          <div class="pad-r unit xs-1 s-1 m-1-2 l-1-2 push">
-            <label for="email" class="push-1-8">Email</label>
-            <input id="email" type="email" name="details" required>
-          </div>
-
-          <!-- Phone -->
-          <div class="pad-l unit xs-1 s-1 m-1-2 l-1-2 push pad-b-1-8">
-            <label for="phone" class="push-1-8">Phone number (optional)</label>
-            <input id="phone" type="tel" name="details" required>
-          </div>
+        <!-- Phone -->
+        <div class="pad-l unit xs-1 s-1 m-1-2 l-1-2 push pad-b-1-8">
+          <label for="phone" class="push-1-8">Phone number (optional)</label>
+          <input id="phone" type="tel" name="details" required>
         </div>
       </fieldset>
 
       <hr class="push-2">
 
-      <fieldset class="unit xs-1 s-1 m-1 l-1 push-2 pad-b-1-8">
-        <legend class="unit giga push pad-b-1-4">Address</legend>
+      <fieldset class="grid xs-1 s-1 m-1 l-1 push-1-2 pad-b-1-8">
+        <legend class="unit giga push pad-b-1-2">Address</legend>
+        <!-- Address -->
+        <div class="pad-r unit xs-1 s-1 m-1-2 l-1-2 pad-b-3-4 push-1-2">
+          <label for="address" class="push-1-8">Street address</label>
+          <input id="address" name="address" class="push-1-8" required>
+        </div>
 
-        <div class="grid">
-          <!-- Address -->
-          <div class="pad-r unit xs-1 s-1 m-1-2 l-1-2 pad-b-3-4 push-1-2">
-            <label for="address" class="push-1-8">Street address</label>
-            <input id="address" name="address" class="push-1-8" required>
-          </div>
+        <!-- City -->
+        <div class="pad-l unit xs-1 s-1 m-1-2 l-1-2 pad-b-3-4 push-1-2">
+          <label for="city" class="push-1-8">City</label>
+          <input id="city" name="address" class="push-1-8" required>
+        </div>
 
-          <!-- City -->
-          <div class="pad-l unit xs-1 s-1 m-1-2 l-1-2 pad-b-3-4 push-1-2">
-            <label for="city" class="push-1-8">City</label>
-            <input id="city" name="address" class="push-1-8" required>
-          </div>
+        <!-- Province -->
+        <div class="pad-r unit xs-1 s-1 m-1-2 l-1-2 pad-b-3-4 push-1-2">
+          <label for="province" class="push-1-8">Province</label>
+          <select id="province" name="address">
+            <option value="">Select a province</option>
+            <option>Alberta</option>
+            <option>British Columbia</option>
+            <option>Manitoba</option>
+            <option>New Brunswick</option>
+            <option>Newfoundland & Labrador</option>
+            <option>Northwest Territories</option>
+            <option>Nova Scotia</option>
+            <option>Nunavut</option>
+            <option>Ontario</option>
+            <option>Prince Edward Island</option>
+            <option>Québec</option>
+            <option>Saskatchewan</option>
+            <option>Yukon</option>
+          </select>
+        </div>
 
-          <!-- Province -->
-          <div class="pad-r unit xs-1 s-1 m-1-2 l-1-2 pad-b-3-4 push-1-2">
-            <label for="province" class="push-1-8">Province</label>
-            <select id="province" name="address">
-              <option value="">Select a province</option>
-              <option>Alberta</option>
-              <option>British Columbia</option>
-              <option>Manitoba</option>
-              <option>New Brunswick</option>
-              <option>Newfoundland & Labrador</option>
-              <option>Northwest Territories</option>
-              <option>Nova Scotia</option>
-              <option>Nunavut</option>
-              <option>Ontario</option>
-              <option>Prince Edward Island</option>
-              <option>Québec</option>
-              <option>Saskatchewan</option>
-              <option>Yukon</option>
-            </select>
-          </div>
-
-          <!-- Postal Code -->
-          <div class="pad-l unit xs-1 s-1 m-1-2 l-1-2 push-1-2">
-            <label for="postal" class="push-1-8">Postal code</label>
-            <input id="postal" name="address" required>
-          </div>
+        <!-- Postal Code -->
+        <div class="pad-l unit xs-1 s-1 m-1-2 l-1-2 push-1-2">
+          <label for="postal" class="push-1-8">Postal code</label>
+          <input id="postal" name="address" required>
         </div>
       </fieldset>
 
@@ -240,10 +234,12 @@
 
       <hr class="push-2">
 
-      <div class="unit xs-1 s-1 m-1 l-1 push">
+      <div class="unit xs-1 s-1 m-1 l-1 push-2">
         <label for="comments" class="push-1-8 giga bold">Please let us know any comments or questions you may have. (optional)</label>
         <textarea id="comments" rows="7" name="comments" required></textarea>
       </div>
+
+      <hr class="push pad-b-1-2">
 
       <!-- Button -->
       <div class="unit xs-1 s-1 m-1 l-1 push text-center">
