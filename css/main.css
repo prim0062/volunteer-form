@@ -12,10 +12,14 @@ header {
   background-color: #70ad55;
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 38em) {
 
-  .med {
-    padding: .5rem;
+  .pad-r {
+    padding-right: .65rem;
+  }
+
+  .pad-l {
+    padding-left: .65rem;
   }
 
 }
@@ -31,5 +35,10 @@ select {
 }
 
 hr {
+  border-color: #6e8c62;
+}
+
+.btn-color {
+  background-color: #6e8c62;
   border-color: #6e8c62;
 }
